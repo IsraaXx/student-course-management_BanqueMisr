@@ -117,15 +117,30 @@ All API endpoints were tested using **Postman** with various scenarios including
 - Updating and deleting data
 
 ---
+## 📸 Screenshots
 
+All endpoints and database actions were **tested manually** using:
+
+- **📮 Postman** – to send and test RESTful API requests like `POST`, `GET`, `PUT`, `DELETE`.
+- **🛢️ MySQL** – to validate data persistence and relationships at the database level.
+
+The [`Screenshots/`](./Screenshots) folder contains:
+
+- ✅ Sample requests and responses from Postman  
+- ✅ Confirmation of inserted, updated, and deleted data in MySQL  
+- ✅ Visual proof of working endpoints and data flow
+
+These screenshots serve as evidence that the backend system is functioning correctly.
+
+---
 ## 🗃️ Database
 
 Using **MySQL** as the relational database.  
 Update your credentials in `application.properties`:
 
 ```properties
-spring.datasource.url=jdbc:mysql://localhost:3306/student_db
-spring.datasource.username=root
+spring.datasource.url=jdbc:mysql://localhost:3306/yourdb
+spring.datasource.username=your_username
 spring.datasource.password=your_password
 spring.jpa.hibernate.ddl-auto=update
 ```
